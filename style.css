@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header.hero {
+    background-color: #5865F2;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    background-image: url('Header.png'); 
+    background-size: cover;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.btn-group {
+    margin-top: 20px;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #7289DA;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #7289DA;
+    border: 2px solid #7289DA;
+}
+
+/* Feature Section */
+.feature {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.feature-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature-content.reverse {
+    flex-direction: row-reverse;
+}
+
+.feature-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.feature-text p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.features-list, .voice-features {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features-list li, .voice-features li {
+    background-color: #f0f0f0;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.feature-img {
+    width: 400px;
+}
+
+.technology {
+    background-color: #F6F6F6;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.technology h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.technology p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.technology-img {
+    width: 600px;
+}
+
+footer {
+    background-color: #23272A;
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+}
+
+footer img {
+    width: 100px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .feature-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature-img {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .technology-img {
+        width: 100%;
+    }
+}
